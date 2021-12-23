@@ -1,0 +1,31 @@
+{
+	"education": [
+		{
+			"school": "Universidad Juan Agustín Maza",
+			"title": "Profesor Universitario en Informática",
+			"img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/INSTITUCIONAL.jpg/155px-INSTITUCIONAL.jpg",
+			"career": "Ciclo de Profesorado",
+			"score": 10,
+			"start": "2020",
+			"end": "2021"
+		},
+		{
+			"school": "Universidad Blas Pascal",
+			"title": "Licenciatura en Informática",
+			"img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/UBP_V_D_1-m.png/800px-UBP_V_D_1-m.png",
+			"career": "Ciclo de Licenciatura",
+			"score": 9,
+			"start": "2012",
+			"end": "2014"
+		},
+		{
+			"school": "I.E.S. Nº 9-012 “SAN RAFAEL EN INFORMÁTICA”",
+			"title": "Analista de Sistemas de Información",
+			"img": "https://ies9012.edu.ar/sigeaweb/images/logos/logo_ies.jpg",
+			"career": "Ciclo de Tecnicatura",
+			"score": 9,
+			"start": "2004",
+			"end": "2007"
+		}
+	]
+}

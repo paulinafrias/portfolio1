@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Web</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Gustavo Martín Maunás</a>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link waves-effect waves-light">
+            <i class="grey-text fab fa-facebook-square fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-effect waves-light">
+            <i class="grey-text fab fa-instagram fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-effect waves-light">
+            <i class="grey-text fab fa-twitter fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Acceso</button>
+
+      </form>
+    </div>
+  </nav>
+
+  <div class="card mat-card" id="first-card">
+    <div id="profile-background"><img id="info-back-img"
+        src="https://cdn.pixabay.com/photo/2015/11/19/08/51/banner-1050624_960_720.jpg">
+    </div>
+    <div id="info" style="padding: 16px">
+      <div id="info-img">
+        <img id="info-user-img" class="profile-image"
+          src="https://media-exp1.licdn.com/dms/image/C4E03AQHhK2-XaiXNTw/profile-displayphoto-shrink_200_200/0/1634643405912?e=1645056000&v=beta&t=DfV4ypMOHUilKZ3oNJeY8sr172BxA8WJO7nWtBMqd2U">
+        <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"
+              onclick="showEditProfileModal()"></i></a></div>
+      </div>
+      <div id="info-data">
+        <div>
+          <h1 id="info-name">Gustavo Martín Maunás</h1>
+          <div><span id="info-position">Profesor Sincrónico (Argentina Programa)</span> en <span
+              id="info-company">INTI</span></div>
+          <div id="info-contact">
+            <span id="info-ubication">Mendoza (Argentina)</span>
+            <span><a href="#">Información de contacto</a></span>
+          </div>
+        </div>
+        <ul id="info-details">
+          <li><a href="#">
+              <img id="info-company-img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/INTI_Logo_2019.png/1024px-INTI_Logo_2019.png">
+              <h2 id="info-company-name">INTI</h2>
+            </a></li>
+          <li><a href="#">
+              <img id="info-school-img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/UBP_V_D_1-m.png/800px-UBP_V_D_1-m.png">
+              <h2 id="info-school-name">Universidad Blas Pascal</h2>
+            </a></li>
+        </ul>
+      </div>
+      <div id="info-actions">
+        <button type="button" class="btn btn-danger">Tengo interés en</button>
+        <button type="button" class="btn btn-dark">Añadir Sección</button>
+        <button type="button" class="btn btn-dark">Más</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mat-card">
+    <div class="card-titles">
+      <h2>Acerca de...</h2>
+      <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen" onclick="showEditAboutModal()"></i></a>
+      </div>
+    </div>
+    <div id="about">
+      Hola, soy Gustavo Martín Maunás. Mi experiencia profesional en el área de la informática y el quehacer como
+      docente trabajan de la mano para formar y transformar. Esta profesión es realmente un reto asumirla, debido a que
+      en ella no solo se educan personas, sino que también se aprende a ser “humano”. Lo que más me gusta de la
+      programación es dar soluciones a problemas que aparentemente son complicados.
+    </div>
+  </div>
+
+  <div class="card mat-card">
+    <div id="experience">
+      <div class="card-titles">
+        <h2>Experiencia</h2>
+        <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-plus" onclick="showNewExpModal()"></i></a>
+        </div>
+      </div>
+      <div>
+        <ul class="items-list" id="expList">
+
+        </ul>
+      </div>
+    </div>
+    <div id="education">
+      <div class="card-titles">
+        <h2>Educación</h2>
+        <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-plus" onclick="showNewEduModal()"></i></a>
+        </div>
+      </div>
+      <div>
+        <ul class="items-list" id="eduList">
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mat-card">
+    <div class="card-titles">
+      <h2>Hard Skills & Soft Skills</h2>
+      <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-plus" onclick="showNewAptModal()"></i></a>
+      </div>
+    </div>
+    <ol class="items-list">
+      <li>
+        <div class="aptitude-info">
+          <a href="#">
+            <p><span>Java</span> - 2</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 90%"
+                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p><span>Juan Manuel Maunás y 1</span> contacto han validado esta aptitud.</p>
+          </a>
+        </div>
+      </li>
+
+
+    </ol>
+  </div>
+
+  <div class="card mat-card">
+    <div class="card-titles">
+      <h2>Logros</h2>
+      <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-plus" onclick="showNewAchModal()"></i></a>
+      </div>
+    </div>
+    <div class="achivements">
+      <h3>2</h3>
+      <div>
+        <div class="project-title">
+          <h3>Logros</h3>
+        </div>
+        <div>
+          <ul class="project-list">
+            <li> Proyecto #1</li>
+            <li> Proyecto #2</li>
+            <li> Proyecto #3</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Edit Profile -->
+  <div class="modal fade" id="editProfile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Editar perfil</h5>
+          <button type="button" class="close" onclick="$('#editProfile').modal('hide');" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="inputName">Nombre</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Enter name">
+          </div>
+          <div class="form-group">
+            <label for="inputPosition">Posición</label>
+            <input type="text" class="form-control" id="inputPosition" placeholder="Enter position">
+          </div>
+          <div class="form-group">
+            <label for="inputCompany">Compañía</label>
+            <input type="text" class="form-control" id="inputCompany" placeholder="Enter company">
+          </div>
+          <div class="form-group">
+            <label for="inputUbication">Ubicación</label>
+            <input type="text" class="form-control" id="inputUbication" placeholder="Enter ubication">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="$('#editProfile').modal('hide');">Cerrar</button>
+          <button type="button" class="btn btn-primary" onclick="saveEditProfileModal()">Guardar cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Edit About -->
+  <div class="modal fade" id="editAbout" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Editar acerca de...</h5>
+          <button type="button" class="close" onclick="$('#editAbout').modal('hide');" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="inputAbout">Acerca de...</label>
+            <textarea type="text" class="form-control" id="inputAbout" placeholder="Enter about"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="$('#editAbout').modal('hide');">Cerrar</button>
+          <button type="button" class="btn btn-primary" onclick="saveEditAboutModal()">Guardar cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal New Experience -->
+  <div class="modal fade" id="newExp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Añadir experiencia</h5>
+          <button type="button" class="close" onclick="$('#newExp').modal('hide');" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="inputPositionExp">Posición</label>
+            <input type="text" class="form-control" id="inputPositionExp" placeholder="Enter position">
+          </div>
+          <div class="form-group">
+            <label for="inputCompanyExp">Compañía</label>
+            <input type="text" class="form-control" id="inputCompanyExp" placeholder="Enter company">
+          </div>
+          <div class="form-group">
+            <label for="inputImgExp">Imagen</label>
+            <input type="text" class="form-control" id="inputImgExp" placeholder="Enter image">
+          </div>
+          <div class="form-group">
+            <label for="inputModeExp">Modo</label>
+            <input type="text" class="form-control" id="inputModeExp" placeholder="Enter Mode">
+          </div>
+          <div class="form-group">
+            <label for="inputInitialExp">Fecha Inicio</label>
+            <input type="text" class="form-control" id="inputInitialExp" placeholder="Enter initial date">
+          </div>
+          <div class="form-group">
+            <label for="inputEndExp">Fecha Fin</label>
+            <input type="text" class="form-control" id="inputEndExp" placeholder="Enter end date">
+          </div>
+          <div class="form-group">
+            <label for="inputTimeExp">Tiempo en el trabajo</label>
+            <input type="text" class="form-control" id="inputTimeExp" placeholder="Enter time in position">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="$('#newExp').modal('hide');">Cerrar</button>
+          <button type="button" class="btn btn-primary" onclick="saveNewExpModal()">Guardar cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Edit Experience -->
+  <div class="modal fade" id="editExp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Editar experiencia</h5>
+          <button type="button" class="close" onclick="$('#editExp').modal('hide');" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="inputCompanyExpEdit">Compañía</label>
+            <input type="text" class="form-control" id="inputCompanyExpEdit" placeholder="Enter company" readonly>
+          </div>
+          <div class="form-group">
+            <label for="inputPositionExpEdit">Posición</label>
+            <input type="text" class="form-control" id="inputPositionExpEdit" placeholder="Enter position">
+          </div>
+          <div class="form-group">
+            <label for="inputImgExpEdit">Imagen</label>
+            <input type="text" class="form-control" id="inputImgExpEdit" placeholder="Enter image">
+          </div>
+          <div class="form-group">
+            <label for="inputModeExpEdit">Modo</label>
+            <input type="text" class="form-control" id="inputModeExpEdit" placeholder="Enter Mode">
+          </div>
+          <div class="form-group">
+            <label for="inputInitialExpEdit">Fecha Inicio</label>
+            <input type="text" class="form-control" id="inputInitialExpEdit" placeholder="Enter initial date">
+          </div>
+          <div class="form-group">
+            <label for="inputEndExpEdit">Fecha Fin</label>
+            <input type="text" class="form-control" id="inputEndExpEdit" placeholder="Enter end date">
+          </div>
+          <div class="form-group">
+            <label for="inputTimeExpEdit">Tiempo en el trabajo</label>
+            <input type="text" class="form-control" id="inputTimeExpEdit" placeholder="Enter time in position">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="$('#editExp').modal('hide');">Cerrar</button>
+          <button type="button" class="btn btn-primary"
+            onclick="saveEditExpModal($('#inputCompanyExpEdit').val())">Guardar
+            cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal New Education -->
+  <div class="modal fade" id="newEdu" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Añadir educación</h5>
+          <button type="button" class="close" onclick="$('#newEdu').modal('hide');" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="inputSchool">Institución educativa</label>
+            <input type="text" class="form-control" id="inputSchool" placeholder="Enter school">
+          </div>
+          <div class="form-group">
+            <label for="inputTitle">Título</label>
+            <input type="text" class="form-control" id="inputTitle" placeholder="Enter title">
+          </div>
+          <div class="form-group">
+            <label for="inputSchoolImage">Imagen</label>
+            <input type="text" class="form-control" id="inputSchoolImage" placeholder="Enter image">
+          </div>
+          <div class="form-group">
+            <label for="inputCareer">Carrera</label>
+            <input type="text" class="form-control" id="inputCareer" placeholder="Enter career">
+          </div>
+          <div class="form-group">
+            <label for="inputScore">Promedio</label>
+            <input type="text" class="form-control" id="inputScore" placeholder="Enter score">
+          </div>
+          <div class="form-group">
+            <label for="inputSchoolInitial">Fecha Inicio</label>
+            <input type="text" class="form-control" id="inputSchoolInitial" placeholder="Enter initial date">
+          </div>
+          <div class="form-group">
+            <label for="inputSchoolEnd">Fecha Final</label>
+            <input type="text" class="form-control" id="inputSchoolEnd" placeholder="Enter end date">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="$('#newEdu').modal('hide');">Cerrar</button>
+          <button type="button" class="btn btn-primary" onclick="saveNewEduModal()">Guardar cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Edit Education -->
+  <div class="modal fade" id="editEdu" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Editar educación</h5>
+          <button type="button" class="close" onclick="$('#editEdu').modal('hide');" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="inputSchoolEdit">Institución educativa</label>
+            <input type="text" class="form-control" id="inputSchoolEdit" placeholder="Enter school" readonly>
+          </div>
+          <div class="form-group">
+            <label for="inputTitleEdit">Título</label>
+            <input type="text" class="form-control" id="inputTitleEdit" placeholder="Enter title">
+          </div>
+          <div class="form-group">
+            <label for="inputSchoolImageEdit">Imagen</label>
+            <input type="text" class="form-control" id="inputSchoolImageEdit" placeholder="Enter image">
+          </div>
+          <div class="form-group">
+            <label for="inputCareerEdit">Carrera</label>
+            <input type="text" class="form-control" id="inputCareerEdit" placeholder="Enter career">
+          </div>
+          <div class="form-group">
+            <label for="inputScoreEdit">Promedio</label>
+            <input type="text" class="form-control" id="inputScoreEdit" placeholder="Enter score">
+          </div>
+          <div class="form-group">
+            <label for="inputSchoolInitialEdit">Fecha Inicio</label>
+            <input type="text" class="form-control" id="inputSchoolInitialEdit" placeholder="Enter initial date">
+          </div>
+          <div class="form-group">
+            <label for="inputSchoolEndEdit">Fecha Final</label>
+            <input type="text" class="form-control" id="inputSchoolEndEdit" placeholder="Enter end date">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="$('#editEdu').modal('hide');">Cerrar</button>
+          <button type="button" class="btn btn-primary" onclick="saveEditEduModal($('#inputSchoolEdit').val())">Guardar
+            cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal New Apt -->
+  <div class="modal fade" id="newApt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Añadir aptitud</h5>
+          <button type="button" class="close" onclick="$('#newApt').modal('hide');" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="inputApt">Aptitud</label>
+            <input type="text" class="form-control" id="inputApt" placeholder="Enter Aptitude">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="$('#newApt').modal('hide');">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal New Achivements -->
+  <div class="modal fade" id="newAch" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Añadir logro</h5>
+          <button type="button" class="close" onclick="$('#newAch').modal('hide');" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="inputAch">Logro</label>
+            <input type="text" class="form-control" id="inputAch" placeholder="Enter Achivements">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="$('#newAch').modal('hide');">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="front.js"></script>
+</body>
+
+</html>

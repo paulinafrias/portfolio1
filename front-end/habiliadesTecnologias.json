@@ -1,0 +1,20 @@
+{
+	"habilidadesTecnologias": [
+		{
+			"name": "Java",
+			"progress": 75
+		},
+		{
+			"name": "JavaScript",
+			"progress": 75
+		},
+		{
+			"name": "Spring Boot",
+			"progress": 75
+		},
+		{
+			"name": "MySQL",
+			"progress": 75
+		}
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"Persona": [
+		{
+			"fullName": "Gustavo Martín Maunás",
+			"dateOfBirth": "20/05/1985",
+			"aboutMe": "Profesor Sincrónico (Argentina Programa)",
+			"mail": "maunasgm@gmail.com",
+			"backImage": "https://cdn.pixabay.com/photo/2015/11/19/08/51/banner-1050624_960_720.jpg",
+			"image": "https://media-exp1.licdn.com/dms/image/C4E03AQHhK2-XaiXNTw/profile-displayphoto-shrink_200_200/0/1634643405912?e=1645056000&v=beta&t=DfV4ypMOHUilKZ3oNJeY8sr172BxA8WJO7nWtBMqd2U",
+			"position": "INTI",
+			"ubication": "San Rafael - Mendoza (Argentina)"
+		}
+	]
+}
